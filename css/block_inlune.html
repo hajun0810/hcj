@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- display: inline; 블록레벨 요소인 h1을 인라인 요소로 변환-->
+    <style>
+        h1{
+            display: inline;
+        }
+
+        div{
+            width: 100px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <!--블록레벨 요소는 밑으로 쌓인다 -->
+    <h1>h1</h1>
+    <!--span 인라인레벨 요소는 옆으로 쌓인다.-->
+    <span>span1</span>
+    <span>span2</span>
+    <!-- 블록레벨 요소는 밑으로 쌓인다 
+    width 와 상관이 없다.-->
+    <div>div</div>
+    <div>div</div>
+</body>
+</html>
