@@ -220,6 +220,7 @@
     align-items: center;
     border: 1px solid #c6c6c6;
     height: 50px;
+    padding:0 10px;
     background-color: white;
 }
 
