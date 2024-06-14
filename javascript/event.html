@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="handleButtonClick(event)">확인</button>
+    <!--onkeydown 키를 눌렀을떄 입력, 첫 값은 무조건 빈값이 들어간다. 
+        onkeyup - 키를 뗏을때 입력
+        onkeypress 키를 눌렀을때 입력-->
+    <input 
+    type="text" 
+    onkeydown="handleInputChange(event)"
+    onfocus="hadleInputFocus(event)"
+    onblur="hadleInputBlur(event)"
+    >
+    <script src="event.js"></script>
+</body>
+</html>
