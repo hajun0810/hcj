@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User-Management</title>
+    <title>Document</title>
     <style>
-        table{
+        table {
             border: 1px solid #dbdbdb;
             border-collapse: collapse;
         }
@@ -19,21 +19,32 @@
 </head>
 <body>
     <div>
-        <input type="text" class="username-input"
-         name="username" placeholder="username" 
-          onkeydown="handleUserInputKeyDown(event)">
-
-        <input type="text" class="password-input" 
-        name="password" placeholder="password" 
-        onkeydown="handleUserInputKeyDown(event)">
-        
+        <input 
+            type="text" class="name-input" 
+            name="name" placeholder="name"
+            onkeydown="handleUserInputKeyDown(event)"
+        >
+        <input 
+            type="text" class="username-input" 
+            name="username" placeholder="username"
+            onkeydown="handleUserInputKeyDown(event)"
+        >
+        <input 
+            type="text" class="password-input" 
+            name="password" placeholder="password"
+            onkeydown="handleUserInputKeyDown(event)"
+        >
     </div>
     <table>
         <thead>
             <tr>
+                <th></th>
                 <th>번호</th>
-                <th>사용자명</th>
+                <th>id</th>
+                <th>성명</th>
+                <th>사용자이름</th>
                 <th>비밀번호</th>
+                <th>삭제</th>
             </tr>
         </thead>
         <tbody class="user-table-body">
