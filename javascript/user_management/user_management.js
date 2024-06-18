@@ -64,12 +64,13 @@ function handleUserInputKeyDown(e) {
                         findIndex = i;
                         break;
                     }
-                    if(findIndex === -1 ){
-                        alert("사용자 정보 수정 중 오류 발생, 관리자에게 문의하세요");
-                        return;
-                    }
-                    userList[findIndex] = user;
                 }
+                
+                if(findIndex === -1 ){
+                    alert("사용자 정보 수정 중 오류 발생, 관리자에게 문의하세요");
+                    return;
+                }
+                userList[findIndex] = user;
             }
 
             saveUserList();
@@ -106,7 +107,7 @@ function getNewId() {
 
 function handleUserCheck(e) {
     const checkBoxList = document.querySelectorAll("input[type = 'checkbox']");
-    
+
     for(let checkBox of checkBoxList){
         if(checkBox === e.target){
             continue;
